@@ -5,6 +5,13 @@
     <title>Accident</title>
 </head>
 <body>
-Hello : Accident
+Hello : ${user}
+<table >
+        <tr>
+            <c:forEach var="user" items="${users}">
+                <li><c:out value="${user}" /></li>
+            </c:forEach>
+        </tr>
+</table>
 </body>
 </html>
